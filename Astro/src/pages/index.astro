@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+import Gallery from '../components/Gallery.jsx';
+
+const galleryImages = [
+  {
+    id: 1,
+    url: 'public/gallary/1.webp', // Замените на реальный путь
+    location: 'London',
+    artist: 'Michal Rovner',
+    title: 'Pragim',
+    date: 'Apr 26-May 28, 2025',
+  },
+  {
+    id: 2,
+    url: 'public/gallary/2.webp', // Замените на реальный путь
+    location: 'London',
+    artist: 'Michal Rovner',
+    title: 'Pragim',
+    date: 'Apr 26-May 28, 2025',
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Art Gallery</title>
+  </head>
+  <body>
+    <main>
+      <Gallery images={galleryImages} />
+    </main>
+  </body>
+</html>
